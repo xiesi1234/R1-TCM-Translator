@@ -1,0 +1,38 @@
+### model
+model_name_or_path: Qwen/Qwen3-0.6B
+trust_remote_code: true
+
+### method
+stage: sft
+do_train: true
+finetuning_type: lora
+lora_rank: 32
+lora_alpha: 64
+lora_target: all
+
+### dataset
+dataset: tcm_medical_knowledge_source1,tcm_medical_knowledge_source2,tcm_medical_knowledge_source3,tcm_translation_deepseek_12145
+dataset_dir: sft/llama_factory
+template: qwen3
+cutoff_len: 2048
+overwrite_cache: true
+preprocessing_num_workers: 8
+
+### output
+output_dir: outputs/llama_factory/qwen3_0_6b_sft_paper
+logging_steps: 10
+save_steps: 200
+plot_loss: true
+overwrite_output_dir: true
+save_total_limit: 3
+
+### train (same schedule as 8B config)
+per_device_train_batch_size: 8
+gradient_accumulation_steps: 2
+learning_rate: 1.0e-4
+num_train_epochs: 2.0
+lr_scheduler_type: cosine
+bf16: true
+
+### optional
+report_to: none

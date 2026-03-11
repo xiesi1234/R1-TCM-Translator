@@ -1,0 +1,31 @@
+{
+  "tcm_medical_knowledge_source1": {
+    "file_name": "../data/sft_medical_knowledge_source1.json",
+    "columns": {
+      "prompt": "prompt",
+      "response": "response"
+    }
+  },
+  "tcm_medical_knowledge_source2": {
+    "file_name": "../data/sft_medical_knowledge_source2.json",
+    "columns": {
+      "prompt": "prompt",
+      "response": "response"
+    }
+  },
+  "tcm_medical_knowledge_source3": {
+    "file_name": "../data/sft_medical_knowledge_source3.json",
+    "columns": {
+      "prompt": "prompt",
+      "response": "response"
+    }
+  },
+  "tcm_translation_deepseek_12145": {
+    "file_name": "../data/sft_translation_deepseek_12145.json",
+    "columns": {
+      "prompt": "prompt",
+      "query": "query",
+      "response": "response"
+    }
+  }
+}

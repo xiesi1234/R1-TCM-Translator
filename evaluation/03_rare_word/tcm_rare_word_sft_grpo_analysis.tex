@@ -1,0 +1,39 @@
+% Rare-word analysis for TCM classical translation
+% Auto-generated LaTeX
+
+\begin{table}[!htbp]
+\centering
+\caption{Comparison of token-level translation accuracy across training-corpus frequency bins in TCM classical translation. Frequency range indicates the occurrence interval of tokens in the training corpus, count is the total number of test tokens in that bin, and ACC denotes the percentage of correctly predicted tokens.}
+\label{tab:rare_word_analysis}
+\begin{adjustbox}{max width=\textwidth}
+\begin{tabular}{lrrrrrrrr}
+\toprule
+\multirow{2}{*}{\textbf{Frequency Bin}} & \multicolumn{2}{c}{\textbf{Qwen3-0.6B-SFT}} & \multicolumn{2}{c}{\textbf{R1-TCM-Translator-0.6B}} & \multicolumn{2}{c}{\textbf{Qwen3-8B-SFT}} & \multicolumn{2}{c}{\textbf{R1-TCM-Translator-8B}} \\
+\cmidrule(lr){2-3} \cmidrule(lr){4-5} \cmidrule(lr){6-7} \cmidrule(lr){8-9}
+ & \textbf{Count} & \textbf{ACC(\%)} & \textbf{Count} & \textbf{ACC(\%)} & \textbf{Count} & \textbf{ACC(\%)} & \textbf{Count} & \textbf{ACC(\%)} \\
+\midrule
+1-2 & 2957 & 17.10 & 2957 & 25.72 & 2957 & 22.80 & 2957 & 23.37 \\
+2-4 & 1972 & 18.00 & 1972 & 26.99 & 1972 & 24.71 & 1972 & 25.32 \\
+4-8 & 2609 & 17.80 & 2609 & 26.69 & 2609 & 25.44 & 2609 & 26.82 \\
+8-16 & 3281 & 18.84 & 3281 & 26.80 & 3281 & 27.95 & 3281 & 29.33 \\
+16-32 & 4090 & 19.45 & 4090 & 25.02 & 4090 & 29.01 & 4090 & 29.93 \\
+32-64 & 4655 & 24.19 & 4655 & 32.75 & 4655 & 35.06 & 4655 & 35.59 \\
+64-128 & 4786 & 25.07 & 4786 & 32.78 & 4786 & 37.42 & 4786 & 38.60 \\
+128-256 & 4134 & 29.44 & 4134 & 37.95 & 4134 & 41.72 & 4134 & 42.61 \\
+256-512 & 2992 & 34.48 & 2992 & 49.00 & 2992 & 46.93 & 2992 & 47.49 \\
+\midrule
+\textbf{Low-Frequency Avg} & - & \textbf{17.93} & - & \textbf{26.55} & - & \textbf{25.23} & - & \textbf{26.21} \\
+\textbf{Mid-Frequency Avg} & - & \textbf{26.53} & - & \textbf{35.50} & - & \textbf{38.03} & - & \textbf{38.84} \\
+\bottomrule
+\end{tabular}
+\end{adjustbox}
+\end{table}
+
+\paragraph{Key Findings}
+
+\begin{itemize}
+    \item \textbf{Low-frequency token improvement}: For rare tokens with fewer than 16 occurrences, GRPO improves the 0.6B model from 17.93\% to 26.55\% (relative +48.1\%), while the 8B model improves from 25.23\% to 26.21\% (relative +3.9\%). This indicates that GRPO can improve rare-token prediction in TCM translation.
+    \item \textbf{Mid-frequency token translation}: For mid-frequency tokens with 16--512 occurrences, the 0.6B GRPO model reaches 35.50\% (relative +33.8\% over SFT), and the 8B GRPO model reaches 38.84\% (relative +2.2\% over SFT).
+    \item \textbf{Frequency--accuracy relationship}: Accuracy increases as token frequency rises. This trend is consistent with causal language modeling, where high-frequency tokens are observed more often and are easier to learn~\cite{radford2018improving}.
+    \item \textbf{Rare-token challenge}: Despite SFT and GRPO improvements, extremely low-frequency tokens (<4 occurrences) remain difficult, with substantially lower accuracy than high-frequency tokens. This aligns with core MT challenges in the LLM era reported by Pang et al.~\cite{pang2024mtchallenges}.
+\end{itemize}

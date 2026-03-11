@@ -1,0 +1,83 @@
+====================================================================================================
+Rare-Word Translation Accuracy Report (Based on LLM Word Alignments)
+====================================================================================================
+
+## Overall Statistics
+
+Total sentences: 12964
+Sentences with rare words: 10792
+Total rare-word alignments: 41340
+Correct translations: 10474
+Overall accuracy: 25.34%
+
+## Per-Model Detailed Results
+
+### Qwen3-0.6B-SFT
+
+- Total sentences: 3241
+- Sentences with rare words: 2698
+- Rare-word alignments: 10335
+- Correct translations: 2044
+- Partially correct: 6932
+- Incorrect translations: 1359
+- **Accuracy: 19.78%**
+- Partial accuracy: 86.85%
+
+By alignment type:
+  - omitted: 2/54 (3.70%)
+  - paraphrase: 315/4100 (7.68%)
+  - expansion: 104/3344 (3.10%)
+  - exact: 1623/2837 (57.22%)
+
+### Qwen3-0.6B-GRPO
+
+- Total sentences: 3241
+- Sentences with rare words: 2698
+- Rare-word alignments: 10335
+- Correct translations: 2903
+- Partially correct: 6663
+- Incorrect translations: 769
+- **Accuracy: 28.09%**
+- Partial accuracy: 92.56%
+
+By alignment type:
+  - omitted: 2/54 (4.32%)
+  - paraphrase: 407/4100 (9.93%)
+  - expansion: 196/3344 (5.85%)
+  - exact: 2297/2837 (80.98%)
+
+### Qwen3-8B-SFT
+
+- Total sentences: 3241
+- Sentences with rare words: 2698
+- Rare-word alignments: 10335
+- Correct translations: 2685
+- Partially correct: 6713
+- Incorrect translations: 937
+- **Accuracy: 25.98%**
+- Partial accuracy: 90.93%
+
+By alignment type:
+  - omitted: 2/54 (4.32%)
+  - paraphrase: 566/4100 (13.80%)
+  - expansion: 261/3344 (7.80%)
+  - exact: 1856/2837 (65.43%)
+
+### Qwen3-8B-GRPO
+
+- Total sentences: 3241
+- Sentences with rare words: 2698
+- Rare-word alignments: 10335
+- Correct translations: 2842
+- Partially correct: 5251
+- Incorrect translations: 2242
+- **Accuracy: 27.50%**
+- Partial accuracy: 78.31%
+
+By alignment type:
+  - omitted: 1/54 (1.85%)
+  - paraphrase: 634/4100 (15.46%)
+  - expansion: 370/3344 (11.06%)
+  - exact: 1837/2837 (64.75%)
+
+====================================================================================================
