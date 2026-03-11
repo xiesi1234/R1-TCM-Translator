@@ -64,6 +64,7 @@ CHALLENGES = {
 MODELS = [
     ('Qwen3-0.6B-Base', 'experiments/Qwen3-0.6B/Base'),
     ('Qwen3-0.6B-SFT', 'experiments/Qwen3-0.6B/SFT'),
+    ('Qwen3-0.6B-GRPO', 'experiments/Qwen3-0.6B/GRPO/Qwen3-0.6B-checkpoint-5000'),
     ('Qwen3-0.6B-SFT+GRPO', 'experiments/Qwen3-0.6B/SFT_GRPO/reward_bleu_comet/checkpoints/Qwen3-0.6B-checkpoint-4000'),
     ('Qwen3-8B-Base', 'experiments/Qwen3-8B/Base'),
     ('Qwen3-8B-SFT', 'experiments/Qwen3-8B/SFT'),
