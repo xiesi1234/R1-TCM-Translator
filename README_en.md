@@ -2,6 +2,13 @@
 
 Open-source package for the paper **Reinforcement Learning for the Computational Interpretation of Classical Medical Heritage Texts**.
 
+## Official Repositories
+
+- Code (GitHub): `https://github.com/xiesi1234/R1-TCM-Translator`
+- Dataset (Hugging Face): `https://huggingface.co/datasets/xs12345/R1-TCM-Data`
+- Model (0.6B): `https://huggingface.co/xs12345/R1-TCM-Translator-0.6B`
+- Model (8B): `https://huggingface.co/xs12345/R1-TCM-Translator-8B`
+
 ## Project Goal
 
 This project targets ancient-to-modern Chinese translation for classical TCM texts, with emphasis on heritage-oriented interpretive fidelity (semantic faithfulness and cultural/epistemic consistency), not only surface fluency.
@@ -58,8 +65,8 @@ Source link:
 
 ## Hugging Face Models
 
-- R1-TCM-Translator-0.6B: `https://huggingface.co/R1-TCM_translator/R1-TCM-Translator-0.6B`
-- R1-TCM-Translator-8B: `https://huggingface.co/R1-TCM_translator/R1-TCM-Translator-8B`
+- R1-TCM-Translator-0.6B: `https://huggingface.co/xs12345/R1-TCM-Translator-0.6B`
+- R1-TCM-Translator-8B: `https://huggingface.co/xs12345/R1-TCM-Translator-8B`
 
 ## Repository Structure
 

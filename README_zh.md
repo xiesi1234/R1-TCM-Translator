@@ -32,8 +32,10 @@
 
 ### Hugging Face 模型链接
 
-- R1-TCM-Translator-0.6B：`https://huggingface.co/R1-TCM_translator/R1-TCM-Translator-0.6B`
-- R1-TCM-Translator-8B：`https://huggingface.co/R1-TCM_translator/R1-TCM-Translator-8B`
+- 代码仓库（GitHub）：`https://github.com/xiesi1234/R1-TCM-Translator`
+- 数据仓库（Hugging Face Dataset）：`https://huggingface.co/datasets/xs12345/R1-TCM-Data`
+- R1-TCM-Translator-0.6B：`https://huggingface.co/xs12345/R1-TCM-Translator-0.6B`
+- R1-TCM-Translator-8B：`https://huggingface.co/xs12345/R1-TCM-Translator-8B`
 
 本目录是整理后的公开版本，重点提供：
 
@@ -274,7 +276,12 @@ llamafactory-cli train sft/llama_factory/qwen3_8b_sft_paper.yaml
 
 ## 数据可用性
 
-核心训练数据与复现材料已在本目录公开。补充材料可联系通讯作者获取。
+数据与代码均已公开：
+- 代码（GitHub）：`https://github.com/xiesi1234/R1-TCM-Translator`
+- 数据（Hugging Face Dataset）：`https://huggingface.co/datasets/xs12345/R1-TCM-Data`
+- 模型（Hugging Face Models）：
+  - `https://huggingface.co/xs12345/R1-TCM-Translator-0.6B`
+  - `https://huggingface.co/xs12345/R1-TCM-Translator-8B`
 
 ## 许可证与使用边界
 
